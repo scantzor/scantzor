@@ -1,0 +1,17 @@
+def find_highest(listy):
+    
+    highest_number = 0
+    for x in listy:
+        if x > highest_number:
+            highest_number = x
+    
+    while len(listy) > 0: 
+    
+        tally = 0    
+        for x in listy:
+            tally += x
+            if tally > highest_number:
+                highest_number = tally
+        listy = listy[1:]
+    
+    return highest_number
