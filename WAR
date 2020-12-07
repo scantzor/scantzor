@@ -13,7 +13,7 @@ class Card:
     def __str__(self):
         return self.rank + " of " + self.suit
         
-        import random
+import random
 
 class Deck:
     
